@@ -1,6 +1,6 @@
-15
-\lneg
-\lneg \lneg
+16
+\neg
+\neg \neg
 \lor
 \Rightarrow
 \Leftrightarrow
@@ -11,6 +11,7 @@ ABC123
 a45 \lor b \Rightarrow
 a45 \lor ( b \Rightarrow )
 a45 \lor ( b \Rightarrow \land )
-a45 \lor ( b \Rightarrow \lneg )
+a45 \lor ( b \Rightarrow \neg )
 \lor T
 F \land
+\neg ( )

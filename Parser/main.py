@@ -42,7 +42,8 @@ def AbreParen(indiceAtual):
     if (
             (indiceAtual > ultimoIndice - 1) or
             (vetorDeParametros[indiceAtual + 1] == operadorUnario) or
-            (vetorDeParametros[indiceAtual + 1] in operadoresBinario)
+            (vetorDeParametros[indiceAtual + 1] in operadoresBinario) or
+            (vetorDeParametros[indiceAtual + 1] == fechaParen)
     ):
         return False
 
@@ -106,7 +107,7 @@ while True:
     print('Quantidade de formulas a serem informadas: ' + quantidade)
 
     for i in range(int(quantidade)):
-        vetorDeParametros = arquivo.readline().rstrip('\n').split()
+        vetorDeParametros = arquivo.readline().rstrip('\n').replace('neg', 'lneg').split()
         ultimoIndice = len(vetorDeParametros) - 1
         contadorDeParentes = 0
         status = Formula(0, True)

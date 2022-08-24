@@ -1,11 +1,11 @@
 28
-\lneg
-\lneg \lneg
+\neg
+\neg \neg
 \lor
 \Rightarrow
 a12
 ( )
-\lneg ( a34 )
+\neg ( a34 )
 ( a12 \lor a13 )
 \Leftrightarrow
 123

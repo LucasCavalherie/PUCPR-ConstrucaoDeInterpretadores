@@ -1,8 +1,7 @@
-13
+12
 a
 a12
-( )
-\lneg ( a34 )
+\neg ( a34 )
 ( a12 \lor a13 )
 a12 \land a13
 a12 \Rightarrow a13
